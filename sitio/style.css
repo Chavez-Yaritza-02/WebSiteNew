@@ -1,0 +1,293 @@
+*/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f9f9f9;
+}
+
+/* Portada principal */
+.portada {
+  background-image: url('imagenes/portada.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4em;
+  color: #f1ff5c;
+  text-shadow: 2px 2px 6px #000;
+  margin-bottom: 40px;
+}
+
+/* Botones del menú */
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.boton {
+  background-color: #f1ff5c;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #000;
+}
+
+.boton:hover {
+  background-color: #dbe900;
+  transform: scale(1.05);
+}
+
+/* Sección "Sobre Nosotros" */
+#sobre-nosotros {
+  padding: 60px 80px;
+  background-color: #ffffffcc; /* blanco con un poco de transparencia */
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 60px auto;
+  max-width: 1000px;
+  border-radius: 20px;
+}
+
+/* Títulos de secciones */
+#sobre-nosotros h2, 
+#sobre-nosotros h3 {
+  margin-bottom: 10px;
+  text-align: left;
+  color: #222;
+  font-weight: bold;
+}
+
+/* Título principal de sección */
+#sobre-nosotros h2 {
+  font-size: 1.8em;
+  color: #1b5e20;
+}
+
+/* Subtítulos (sobre mí, misión, visión) */
+#sobre-nosotros h3 {
+  font-size: 1.4em;
+  margin-top: 30px;
+  color: #444;
+}
+
+/* Texto general */
+#sobre-nosotros p {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #333;
+  margin-bottom: 20px;
+}
+#terminos {
+  padding: 60px 80px;
+  background-color: #ffffffcc;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 60px auto;
+  max-width: 1000px;
+  border-radius: 20px;
+}
+
+#terminos h2 {
+  font-size: 1.8em;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+#terminos h3 {
+  font-size: 1.3em;
+  color: #333;
+  margin-top: 30px;
+}
+
+#terminos p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+#filosofia {
+  padding: 60px 80px;
+  background-color: #ffffffcc;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 60px auto;
+  max-width: 1000px;
+  border-radius: 20px;
+}
+
+#filosofia h2 {
+  font-size: 1.8em;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#filosofia h3 {
+  font-size: 1.3em;
+  color: #333;
+  margin-top: 30px;
+}
+
+#filosofia p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.boton-vermas {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f1ff5c;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.boton-vermas:hover {
+  background-color: #dbe900;
+  transform: scale(1.05);
+}
+.imagen-catalogo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#catalogo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cabaña {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.imagen-catalogo {
+  width: 10rem; /* o 80px si prefieres */
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.boton-vermas {
+  display: inline-block;
+  margin-top: 5px;
+  background-color: #f1ff5c;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.boton-vermas:hover {
+  background-color: #dbe900;
+  transform: scale(1.05);
+}
+.seccion {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+#catalogo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cabaña {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.cabaña:last-child {
+  border-bottom: none;
+}
+
+.imagen-catalogo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.cabaña p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.boton-vermas {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: #f1ff5c;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.boton-vermas:hover {
+  background-color: #dbe900;
+  transform: scale(1.05);
+}
+.img-catalogo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .cabaña {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .galeria img {
+    width: 80px;
+    height: 80px;
+  }
+}
