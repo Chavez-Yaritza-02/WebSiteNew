@@ -14,7 +14,7 @@ body, html {
 
 /* Portada principal */
 .portada {
-  background-image: url('imagenes/portada.png');
+  background-image: url('img.pg/portada.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
