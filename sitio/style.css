@@ -1,4 +1,4 @@
-*/* Reset general */
+/* Reset general */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body, html {
 
 /* Portada principal */
 .portada {
-  background-image: url(img.png/portada.png);
+  background-image: url(img/portada.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -59,164 +59,62 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Sección "Sobre Nosotros" */
-#sobre-nosotros {
-  padding: 60px 80px;
-  background-color: #ffffffcc; /* blanco con un poco de transparencia */
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  margin: 60px auto;
+/* Secciones generales */
+.seccion, #terminos, #filosofia, #sobre-nosotros {
   max-width: 1000px;
+  margin: 60px auto;
+  padding: 60px 80px;
+  background-color: #ffffffcc;
   border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* Títulos de secciones */
-#sobre-nosotros h2, 
-#sobre-nosotros h3 {
-  margin-bottom: 10px;
-  text-align: left;
-  color: #222;
-  font-weight: bold;
-}
-
-/* Título principal de sección */
+/* Encabezados */
+.seccion h2,
+#terminos h2,
+#filosofia h2,
 #sobre-nosotros h2 {
-  font-size: 1.8em;
-  color: #1b5e20;
+  font-size: 1.9em;
+  margin-bottom: 20px;
+  color: #50a956;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Subtítulos (sobre mí, misión, visión) */
+.seccion h3,
+#terminos h3,
+#filosofia h3,
 #sobre-nosotros h3 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   margin-top: 30px;
-  color: #444;
+  color: #333;
+  border-left: 5px solid rgb(9, 141, 0);
+  padding-left: 10px;
 }
 
-/* Texto general */
+.seccion p,
+#terminos p,
+#filosofia p,
 #sobre-nosotros p {
   font-size: 16px;
   line-height: 1.8;
-  text-align: justify;
-  color: #333;
-  margin-bottom: 20px;
-}
-#terminos {
-  padding: 60px 80px;
-  background-color: #ffffffcc;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  margin: 60px auto;
-  max-width: 1000px;
-  border-radius: 20px;
-}
-
-#terminos h2 {
-  font-size: 1.8em;
-  color: #6a1b9a;
-  margin-bottom: 20px;
-}
-
-#terminos h3 {
-  font-size: 1.3em;
-  color: #333;
-  margin-top: 30px;
-}
-
-#terminos p {
-  font-size: 16px;
-  line-height: 1.8;
   color: #444;
   text-align: justify;
   margin-bottom: 20px;
 }
-#filosofia {
-  padding: 60px 80px;
-  background-color: #ffffffcc;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  margin: 60px auto;
-  max-width: 1000px;
-  border-radius: 20px;
+
+/* Emoji al lado del título */
+#terminos h2::before {
+  content: "📁";
 }
 
-#filosofia h2 {
-  font-size: 1.8em;
-  color: #2e7d32;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-#filosofia h3 {
-  font-size: 1.3em;
-  color: #333;
-  margin-top: 30px;
-}
-
-#filosofia p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #444;
-  text-align: justify;
-  margin-bottom: 20px;
-}
-.boton-vermas {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #f1ff5c;
-  color: #000;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.boton-vermas:hover {
-  background-color: #dbe900;
-  transform: scale(1.05);
-}
-.imagen-catalogo {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
+/* Catálogo */
 #catalogo {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-}
-
-.cabaña {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 15px;
-}
-
-.imagen-catalogo {
-  width: 10rem; /* o 80px si prefieres */
-  height: 10rem;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.boton-vermas {
-  display: inline-block;
-  margin-top: 5px;
-  background-color: #f1ff5c;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  transition: 0.3s ease;
-}
-
-.boton-vermas:hover {
-  background-color: #dbe900;
-  transform: scale(1.05);
-}
-.seccion {
+  gap: 30px;
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
@@ -224,61 +122,51 @@ h1 {
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
-#catalogo {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
 
 .cabaña {
   display: flex;
   align-items: center;
   gap: 20px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  flex-wrap: wrap;
 }
 
-.cabaña:last-child {
-  border-bottom: none;
-}
-
-.imagen-catalogo {
-  width: 100px;
+.cabaña img {
+  width: 120px;
   height: 100px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.cabaña p {
-  margin: 0;
-  font-size: 1rem;
+.cabaña strong {
+  font-size: 1.2rem;
+  color: #333;
 }
 
-.boton-vermas {
+/* Botón "ver más" */
+.btn-vermas, .boton-vermas {
   display: inline-block;
-  margin-top: 8px;
-  background-color: #f1ff5c;
+  background-color: #faff57;
+  color: #000;
+  font-weight: bold;
   padding: 10px 20px;
   border-radius: 30px;
-  font-weight: bold;
   text-decoration: none;
-  color: black;
-  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  margin-top: 10px;
 }
 
-.boton-vermas:hover {
-  background-color: #dbe900;
+.btn-vermas:hover, .boton-vermas:hover {
+  background-color: #f5f031;
   transform: scale(1.05);
 }
-.img-catalogo {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
 
+/* Responsive */
 @media (max-width: 768px) {
   .cabaña {
     flex-direction: column;
@@ -286,8 +174,21 @@ h1 {
     text-align: center;
   }
 
+  .cabaña img {
+    width: 100%;
+    height: auto;
+  }
+
   .galeria img {
     width: 80px;
     height: 80px;
+  }
+
+  #terminos, #filosofia, #sobre-nosotros {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 2.5em;
   }
 }
