@@ -92,4 +92,35 @@
   .boton-reservar:hover {
     background-color: #1ebe57;
   }
+  .boton-vermas {
+    display: inline-block;
+    background-color: #faff57; /* amarillo neón */
+    color: #000;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
   
+  .boton-vermas:hover {
+    background-color: #e0e644;
+  }
+  
+  .boton-reservar {
+    display: inline-block;
+    background-color: #27db58; /* verde brillante */
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-reservar:hover {
+    background-color: #22c14c;
+  }
+    
